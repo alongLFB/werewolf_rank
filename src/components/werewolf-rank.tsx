@@ -53,7 +53,13 @@ const players: Player[] = [
 export default function WerewolfRank() {
   return (
     <div className="flex flex-col items-center w-full max-w-lg mx-auto gap-4 p-4 sm:p-8">
-      <h1 className="text-2xl font-bold mb-4 text-center">阿布狼人杀排行榜</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center">
+        阿布狼人
+        <span className="inline-block text-red-600 animate-bounce hover:scale-125 hover:text-red-500 hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.8)] transition-all duration-300 cursor-pointer mx-1 text-3xl font-black transform -rotate-12 hover:rotate-0">
+          杀
+        </span>
+        排行榜
+      </h1>
       <div className="flex flex-col gap-3 w-full">
         {players.map((player, idx) => (
           <Card
